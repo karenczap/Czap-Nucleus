@@ -1,0 +1,44 @@
+/* CZAP NUCLEUS CUSTOM STYLES */
+/**** MODULES ****/
+
+	/* GLOBAL */
+	
+	.contentModule {
+		padding: 0 2em;
+		@media only screen and (min-width: $medium-breakpoint) {
+			padding: 0 5%;
+		}
+		@media only screen and (min-width: $large-breakpoint) {
+			padding: 0 8%;
+		}
+	}
+	
+	/* --- PRODUCT PAGE --- */
+	
+	.splashFeature {
+		&.column {
+			@media only screen and (min-width: $small-breakpoint) {
+				padding-right: 5%;
+			}
+		}
+	}
+	
+	.splashStage {
+		margin: 0 auto;
+		display: block;
+		@media only screen and (min-width: $medium-breakpoint) {
+			padding: 0 10%;
+		}
+		@media only screen and (min-width: $large-breakpoint) {
+			padding: 0 20%;
+		}
+	}
+	
+	.blockList {
+		list-style: none;
+	}
+	
+	.thumbColumn {
+		@extend .column;
+		@extend .medium-3;
+	}
