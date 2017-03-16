@@ -19,51 +19,80 @@
 /**** MODULES ****/
 /* GLOBAL */
 /* line 6, ../sass/_modules.scss */
-.contentModule {
+.module {
   padding: 0 2em;
 }
 @media only screen and (min-width: 64em) {
   /* line 6, ../sass/_modules.scss */
-  .contentModule {
+  .module {
     padding: 0 5%;
   }
 }
 @media only screen and (min-width: 90em) {
   /* line 6, ../sass/_modules.scss */
-  .contentModule {
+  .module {
     padding: 0 8%;
   }
 }
 
+/* line 16, ../sass/_modules.scss */
+.moduleFlush {
+  padding: 0;
+}
+
+/* line 20, ../sass/_modules.scss */
+.blockList, .socialLinks {
+  list-style: none;
+  margin-left: 0;
+}
+
+/* line 29, ../sass/_modules.scss */
+.socialLinks-item {
+  display: inline-block;
+}
+@media only screen and (min-width: 40em) {
+  /* line 32, ../sass/_modules.scss */
+  .socialLinks-item:before {
+    content: " / ";
+  }
+}
+/* line 37, ../sass/_modules.scss */
+.socialLinks-item:first-child a {
+  padding-left: 0;
+}
+/* line 40, ../sass/_modules.scss */
+.socialLinks-item:first-child:before {
+  content: none;
+}
+/* line 44, ../sass/_modules.scss */
+.socialLinks-item a {
+  padding: 0 .5em;
+}
+
 /* --- PRODUCT PAGE --- */
 @media only screen and (min-width: 40em) {
-  /* line 19, ../sass/_modules.scss */
+  /* line 52, ../sass/_modules.scss */
   .splashFeature.column, .splashFeature.thumbColumn, .splashFeature.columns {
     padding-right: 5%;
   }
 }
 
-/* line 26, ../sass/_modules.scss */
+/* line 59, ../sass/_modules.scss */
 .splashStage {
   margin: 0 auto;
   display: block;
 }
 @media only screen and (min-width: 64em) {
-  /* line 26, ../sass/_modules.scss */
+  /* line 59, ../sass/_modules.scss */
   .splashStage {
     padding: 0 10%;
   }
 }
 @media only screen and (min-width: 90em) {
-  /* line 26, ../sass/_modules.scss */
+  /* line 59, ../sass/_modules.scss */
   .splashStage {
     padding: 0 20%;
   }
-}
-
-/* line 37, ../sass/_modules.scss */
-.blockList {
-  list-style: none;
 }
 
 /**
