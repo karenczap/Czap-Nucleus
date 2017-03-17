@@ -71,3 +71,14 @@
 		@extend .column;
 		@extend .medium-3;
 	}
+	
+	/* --- GALLERY PAGE --- */
+	
+	.galleryLinks {
+		@extend .blockList;
+	}
+	
+	.galleryItem {
+		@extend .column;
+		@extend .small-2;
+	}

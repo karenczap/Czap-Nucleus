@@ -8,6 +8,7 @@ sass_dir = "sass"
 images_dir = "images"
 javascripts_dir = "javascripts"
 add_import_path "node_modules/foundation-sites/scss"
+add_import_path "node_modules/motion-ui/src"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
