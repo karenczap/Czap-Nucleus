@@ -67,6 +67,12 @@
 		}
 	}
 	
+	.orbit-container {
+		&.productStage {
+			/*min-height: 65em;*/
+		}
+	}
+	
 	.thumbColumn {
 		@extend .column;
 		@extend .medium-3;

@@ -3,11 +3,8 @@
 	"variables",
 	"base",
 	"layout",
-	"modules";
-	
-	
-@import 'foundation';
-@import 'motion-ui';
+	"modules",
+	"foundation";
 
 @include foundation-global-styles;
 @include foundation-grid;

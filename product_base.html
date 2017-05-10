@@ -8,8 +8,8 @@
 		<!-- STYLESHEETS -->
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="styles/global.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
 		<!-- JAVASCRIPT -->
-		<script src="js/modernizr.custom.52378.js"></script>
 	</head>
 	<body>
 		<header class="l_header module l_group">
@@ -24,47 +24,52 @@
 			<section class="featureModule l_group">
 				<section class="splashModule module l_group">
 					<div class="splashFeature column medium-7 l_group">
-						<div class="splashStage">
-							<a data-toggle="WL_3324"><img src="images/comic/WL_3324.png" alt="Witchlight" /></a>
+						<div class="">
+							<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-use-m-u-i="false" data-auto-play="false" data-accessible="true">
+								<ul class="orbit-container productStage">
+									<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+								    <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+								    <li class="is-active orbit-slide">
+								    	<img class="orbit-image" src="images/comic/WL_3324.png" alt="Space">
+								    </li>
+								    <li class="orbit-slide">
+								    	<img class="orbit-image" src="images/comic/WL_3326.png" alt="Space">
+								    </li>
+								    <li class="orbit-slide">
+								    	<img class="orbit-image" src="images/comic/WL_3333.png" alt="Space">
+								    </li>
+								    <li class="orbit-slide">
+								        <img class="orbit-image" src="images/comic/WL_3335.png" alt="Space">
+								    </li>
+								    <li class="orbit-slide">
+								        <img class="orbit-image" src="images/comic/WL_3336.png" alt="Space">
+								    </li>
+								</ul>
+								<nav class="orbit-bullets">
+								    <button class="is-active" data-slide="0">
+								    	<img src="images/comic/WL_3324.png" alt="Witchlight" />
+								    	<span class="show-for-sr">First slide details.</span>
+								    	<span class="show-for-sr">Current Slide</span>
+								    </button>
+								    <button data-slide="1">
+								    	<img src="images/comic/WL_3326.png" alt="Witchlight" />
+								    	<span class="show-for-sr">Second slide details.</span>
+								    </button>
+								    <button data-slide="2">
+								    	<img src="images/comic/WL_3333.png" alt="Witchlight" />
+								    	<span class="show-for-sr">Third slide details.</span>
+								    </button>
+								    <button data-slide="3">
+								    	<img src="images/comic/WL_3335.png" alt="Witchlight" />
+								    	<span class="show-for-sr">Fourth slide details.</span>
+								    </button>
+								    <button data-slide="4">
+								    	<img src="images/comic/WL_3336.png" alt="Witchlight" />
+								    	<span class="show-for-sr">Fifth slide details.</span>
+								    </button>
+								</nav>
+							</div>
 						</div>
-						<ul class="blockList thumbnails row">
-							<li class="thumbColumn"><a data-toggle="WL_3326"><img src="images/comic/WL_3326.png" alt="Witchlight" /></a>
-							<li class="thumbColumn"><a data-toggle="WL_3333"><img src="images/comic/WL_3333.png" alt="Witchlight" /></a>
-							<li class="thumbColumn"><a data-toggle="WL_3335"><img src="images/comic/WL_3335.png" alt="Witchlight" /></a>
-							<li class="thumbColumn"><a data-toggle="WL_3336"><img src="images/comic/WL_3336.png" alt="Witchlight" /></a>
-						</ul>
-						<!-- REVEAL MODALS -->
-						<div class="full reveal" id="WL_3324" data-reveal>
-							<img src="images/comic/WL_3326.png" alt="Witchlight" />
-							<button class="close-button" data-close aria-label="Close reveal" type="button">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="full reveal" id="WL_3326" data-reveal>
-							<img src="images/comic/WL_3326.png" alt="Witchlight" />
-							<button class="close-button" data-close aria-label="Close reveal" type="button">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="full reveal" id="WL_3333" data-reveal>
-							<img src="images/comic/WL_3333.png" alt="Witchlight" />
-							<button class="close-button" data-close aria-label="Close reveal" type="button">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="full reveal" id="WL_3335" data-reveal>
-							<img src="images/comic/WL_3335.png" alt="Witchlight" />
-							<button class="close-button" data-close aria-label="Close reveal" type="button">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="full reveal" id="WL_3336" data-reveal>
-							<img src="images/comic/WL_3336.png" alt="Witchlight" />
-							<button class="close-button" data-close aria-label="Close reveal" type="button">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<!-- END REVEAL -->
 					</div>
 					<div class="column medium-5 l_group">
 						<header>
@@ -154,11 +159,11 @@
 				</ul>
 			</section><!-- end .rexModule -->
 			<ul class="socialShare l_group">
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Instagram</a></li>
-				<li><a href="#">Pinterest</a></li>
-				<li><a href="#">Tumblr</a></li>
+				<li class="socialLinks-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li class="socialLinks-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li class="socialLinks-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li class="socialLinks-item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+				<li class="socialLinks-item"><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
 			</ul>
 		</section><!-- end .contentModule -->
 		<footer>

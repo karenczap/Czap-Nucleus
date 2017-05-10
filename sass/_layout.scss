@@ -8,3 +8,30 @@
 		display: table;
 		clear: both;
 	}
+	
+	.no-js {
+	  @media only screen and (max-width: $medium-breakpoint) {
+	    .top-bar {
+	      display: none;
+	    }
+	  }
+	
+	  @media only screen and (min-width: $large-breakpoint) {
+	    .title-bar {
+	      display: none;
+	    }
+	  }
+	}
+	
+	#siteHeader {
+		background: #cfe8f7;
+		margin: 0 0 3em;
+	}
+	
+	#siteFooter {
+		background: #e383df;
+		margin: 3em 0 0;
+		padding: { 
+			top: 2em;
+		}
+	}

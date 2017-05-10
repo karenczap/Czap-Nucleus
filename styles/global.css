@@ -15,6 +15,32 @@
   clear: both;
 }
 
+@media only screen and (max-width: 64em) {
+  /* line 14, ../sass/_layout.scss */
+  .no-js .top-bar {
+    display: none;
+  }
+}
+@media only screen and (min-width: 90em) {
+  /* line 20, ../sass/_layout.scss */
+  .no-js .title-bar {
+    display: none;
+  }
+}
+
+/* line 26, ../sass/_layout.scss */
+#siteHeader {
+  background: #cfe8f7;
+  margin: 0 0 3em;
+}
+
+/* line 31, ../sass/_layout.scss */
+#siteFooter {
+  background: #e383df;
+  margin: 3em 0 0;
+  padding-top: 2em;
+}
+
 /* CZAP NUCLEUS CUSTOM STYLES */
 /**** MODULES ****/
 /* GLOBAL */
@@ -93,6 +119,11 @@
   .splashStage {
     padding: 0 20%;
   }
+}
+
+/* line 71, ../sass/_modules.scss */
+.orbit-container.productStage {
+  /*min-height: 65em;*/
 }
 
 /* --- GALLERY PAGE --- */
@@ -4792,7 +4823,7 @@ select[multiple] {
 /* line 54, ../node_modules/foundation-sites/scss/components/_menu.scss */
 .menu > li {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
 }
 /* line 178, ../node_modules/foundation-sites/scss/util/_mixins.scss */
 [data-whatinput='mouse'] .menu > li {
