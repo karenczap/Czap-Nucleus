@@ -7,27 +7,85 @@
 		<title>Czap Nucleus - Page Base</title>
 		<!-- STYLESHEETS -->
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="styles/global.css">
+		<link rel="stylesheet" href="styles/global.css??v=3.4.059">
 		<!-- JAVASCRIPT -->
 		<script src="js/modernizr.custom.52378.js"></script>
 	</head>
 	<body>
-		<header class="l_header module l_group">
+		<header id="siteHeader" class="l_header expanded row collapse l_group">
+			<nav id="universeNav" class="column small-12">
+				<ul class="mainNav menu">
+					<li><a href="#">Kevin Czap</a></li>
+					<li><a href="#">Czap Books</a></li>
+					<li><a href="#">Studio Skep</a></li>
+				</ul>
+			</nav>
 			
+			<nav id="localNav" class="column small-12 l_group">
+				<a href="#" id="homeLogo">
+					<h1 id="KevinCzap_header" class="siteHeader">Kevin Czap</h1>
+				</a>
+				<section>
+					<div class="title-bar">
+						<button class="menu-icon" type="button"></button>
+						<div class="title-bar-title">Menu</div>
+					</div>
+					<ul id="localMenu" class="mainNav megaMenu-block">
+						<li class="navBlock dropToggle l_group">
+							<a class="subNav_header toggleButton">Projects</a>
+							<ul class="subNav megaMenu">
+								<li class="megaMenu-column">
+									<a href="#">Comics</a>
+								</li>
+								<li class="megaMenu-column">
+									<a href="#">Drawings</a>
+								</li>
+								<li class="megaMenu-column">
+									<a href="#">Writing</a>
+								</li>
+								<li class="megaMenu-column">
+									<a href="#">Band</a>
+								</li>
+							</ul>
+						</li>
+						<li class="navBlock dropToggle l_group">
+							<a class="subNav_header toggleButton">About</a>
+							<ul class="subNav megaMenu">
+								<li class="megaMenu-column">
+									<a href="#">Bio</a>
+								</li>
+								<li class="megaMenu-column">
+									<a href="#">Events</a>
+								</li>
+								<li class="megaMenu-column">
+									<a href="#">CV</a>
+								</li>
+								<li class="megaMenu-column">
+									<a href="#">Social</a>
+								</li>
+							</ul>
+						</li>
+						<li class="navBlock">
+							<a class="subNav_header" href="#">Contact</a>
+						</li>
+					</ul>
+				</section>
+			</nav>
 		</header>
+		
 		<section class="contentModule expanded row l_group">
-			<ul class="breadcrumbs module">
+			<ul class="breadcrumbs column small-12">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About</a></li>
 			</ul>
 			<section class="featureModule l_group">
-				<section class="splashModule module l_group">
-					<div class="column medium-6 l_group">
+				<section class="splashModule l_group">
+					<div class="column medium-6 fullBlock-small l_group">
 						<figure class="featurePortrait">
 							<img src="images/2016_portrait.jpg" alt="Kevin Czap" />
-							<figcaption>photo by Matthew James-Wilson</figcaption>
+							<figcaption class="column fullBlock-medium">photo by Matthew James-Wilson</figcaption>
 						</figure>
-						<ul class="socialLinks">
+						<ul class="socialLinks column fullBlock-medium">
 							<li class="socialLinks-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 							<li class="socialLinks-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 							<li class="socialLinks-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -36,7 +94,7 @@
 							<li class="socialLinks-item"><a href="#">CV</a>
 						</ul>
 					</div>
-					<div class="column medium-6 l_group">
+					<div class="column medium-6 collapse l_group">
 						<header>
 							<h1>Kevin Czap</h1>
 							<h2>Cartoonist, Publisher, Designer, Comics Mom</h2>
@@ -49,7 +107,7 @@
 						</div>
 					</div>
 				</section><!-- end .splashModule -->
-				<section class="detailsModule module l_group">
+				<section class="detailsModule l_group">
 					<div class="column medium-offset-2 medium-5 l_group">
 						<ul>
 							<h3>Select Interviews</h3>
@@ -83,8 +141,64 @@
 				</section><!-- end .detailsModule -->
 			</section><!-- end .featureModule -->
 		</section><!-- end .contentModule -->
-		<footer>
-			
+		
+		<footer id="siteFooter" class="expanded row l_group">
+			<section id="formNewsletter" class="column small-12 medium-4 l_group">
+				<h3>Get Updates</h3>
+				<p>Sign up for periodic updates about what I'm doing</p>
+				<form action="https://czapbooks.createsend.com/t/t/s/qyhhhi/" method="post" id="subForm">
+				    <div class="formFields">
+					    <p>
+					        <label for="fieldName">Name</label>
+					        <input id="fieldName" name="cm-name" type="text" />
+					    </p>
+					    <p>
+					        <label for="fieldEmail">Email</label>
+					        <input id="fieldEmail" name="cm-qyhhhi-qyhhhi" type="email" required />
+					    </p>
+				    </div>
+				    <p>
+				        <button type="submit" class="button submitButton">Subscribe</button>
+				    </p>
+				</form>
+			</section>
+			<section class="column small-8 medium-4 l_group">
+				<h3>Bio</h3>
+				<p><strong>Kevin Czap</strong> is a cartoonist and publisher working in Providence, RI. Their comic, <a href="#"><em>Fütchi Perf</em>, is available now now on Uncivilized Books</a> and they are currently the fellow at the <a href="#">Center for Cartoon Studies</a>. Their ulterior motive is friendship.</p>
+			</section>
+			<section class="column small-4 l_group">
+				<h3>Follow me</h3>
+				<ul class="socialLinks easySmall l_group">
+					<li class="socialLinks-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li class="socialLinks-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li class="socialLinks-item"><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+				</ul>
+				<p><a href="#">Drop a line :&gt;</a></p>
+				<div class="copyright">
+					<p>Copyright &copy;2017, Kevin Czap &hearts;</p>
+				</div>
+			</section>
 		</footer>
+		
+		<!-- JAVASCRIPT -->
+		<script src="js/jquery-3.1.1.min.js"></script> <!-- JQUERY -->
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+			$( function() {
+				$( ".menu-icon" ).on( "click", function() {
+					$( ".megaMenu-block" ).toggleClass( "active" );
+			    });
+			} );
+			  
+			$("a.toggleButton").each(function () {
+		        $(this).click(function (){
+			        var myUL = $(this).parent().toggleClass("active");
+			        $(".dropToggle").not(myUL).removeClass("active");
+			    });
+		    });
+		</script>
+		<!-- FOUNDATION -->
+		<script src="js/foundation.js"></script>
+		<script src="js/docs.js"></script>
 	</body>
 </html>

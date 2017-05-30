@@ -1,8 +1,32 @@
 /* CZAP NUCLEUS CUSTOM STYLES */
 
 	/* VARIABLES */
+		
 		/* -- MEDIA QUERIES -- */
 		$small-breakpoint:  40em;
 		$medium-breakpoint: 64em;
 		$large-breakpoint:  90em;
 		$xlarge-breakpoint: 120em;
+		
+		/* -- COLORS -- */
+		$altColor_alpha: #cfe8f7;
+		$altColor_beta: #000000;
+		
+		
+		
+	/* MIXINS */
+		
+		@mixin transition {
+			-webkit-transition: all .3s ease;
+			-moz-transition: all .3s ease;
+			-o-transition: all .3s ease;
+			-ms-transition: all .3s ease;
+			transition: all .3s ease;
+		}
+		
+		@mixin collapse {
+			padding: {
+				left: 0 !important;
+				right: 0 !important;
+			}
+		}

@@ -23,15 +23,90 @@
 	  }
 	}
 	
+	.collapse {
+		.column, .columns {
+			@include collapse;
+		}
+	}
+	
+	.fullBlock {
+		@include collapse;
+	}
+	
+	.fullBlock-medium {
+		@media only screen and (min-width: $small-breakpoint) {
+			@include collapse;
+		}
+	}
+	
+	.fullBlock-large {
+		@media only screen and (min-width: $medium-breakpoint) {
+			@include collapse;
+		}
+	}
+	
+	.fullBlock-xlarge {
+		@media only screen and (min-width: $large-breakpoint) {
+			@include collapse;
+		}
+	}
+	
+	.fullBlock-small {
+		@media only screen and (max-width: $small-breakpoint) {
+			@include collapse;
+		}
+	}
+	
+	.fullBlock-medium-only {
+		@media only screen and (min-width: $small-breakpoint) and (max-width: $medium-breakpoint) {
+			@include collapse;
+		}
+	}
+	
+	.fullBlock-large-only {
+		@media only screen and (min-width: $medium-breakpoint) and (max-width: $large-breakpoint) {
+			@include collapse;
+		}
+	}
+	
+	#universeNav {
+		display: none;
+		@media only screen and (min-width: $small-breakpoint) {
+			display: block;
+			background: $altColor_beta;
+		}
+	}
+	
 	#siteHeader {
-		background: #cfe8f7;
+		background: $altColor_alpha;
 		margin: 0 0 3em;
 	}
 	
+	#homeLogo {
+		display: block;
+		@media only screen and (min-width: $small-breakpoint) {
+			float: left;
+		}
+	}
+	
+	#localMenu {
+		@media only screen and (min-width: $small-breakpoint) {
+			margin-top: 1em;
+		}
+		@media only screen and (min-width: $medium-breakpoint) {
+			margin-top: 2.125em;
+		}
+	}
+	
 	#siteFooter {
-		background: #e383df;
+		background: $altColor_alpha;
 		margin: 3em 0 0;
 		padding: { 
 			top: 2em;
+		}
+		@media only screen and (min-width: $small-breakpoint) {
+			h3 {
+				font-size: 1.5rem;
+			}
 		}
 	}

@@ -1,0 +1,22 @@
+/* CZAP NUCLEUS CUSTOM STYLES */
+/**** THEME ****/
+
+	/* KEVIN CZAP */
+	
+	#KevinCzap_header {
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 1rem;
+		margin-bottom: 0;
+		line-height: normal;
+		font-size: 3.75em;
+		text-align: center;
+		white-space: nowrap;
+		@media only screen and (min-width: $small-breakpoint) {
+			text-align: left;
+			font-size: 2.25em;	
+		}
+		@media only screen and (min-width: $medium-breakpoint) {
+			font-size: 4em;
+		}
+	}

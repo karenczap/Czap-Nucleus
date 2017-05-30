@@ -13,8 +13,11 @@
 		}
 	}
 	
-	.moduleFlush {
-		padding: 0;
+	.button {
+		width: 100%;
+		@media only screen and (min-width: $medium-breakpoint) {
+			width: auto;	
+		}
 	}
 	
 	.blockList {
@@ -28,6 +31,19 @@
 	
 	.socialLinks-item {
 		display: inline-block;
+		.easySmall & {
+			display: block;
+			text-align: center;
+			a {
+				font-size: 1.5em;
+				padding: .5em;
+				width: auto;
+				background: darken($altColor_alpha, 20%);
+			}
+			@media only screen and (min-width: $small-breakpoint) {
+				display: inline-block;
+			}
+		}
 		@media only screen and (min-width: $small-breakpoint) {
 			&:before {
 				content: " / ";
@@ -45,6 +61,114 @@
 			padding: 0 .5em; 
 		}
 	}
+	
+	.submitButton {
+		display: block;
+		width: 100%;
+	}
+	
+	/* --- HEADER --- */
+	
+		.active {
+			display: block !important;
+		}
+		
+		.title-bar {
+			@media only screen and (min-width: $small-breakpoint) {
+				display: none;
+			}
+		}
+		
+		.megaMenu-block {
+			display: none;
+			cursor: default;
+			z-index: 500;
+			@include transition;
+			& > li {
+				display: block;
+				& > a {
+					position: relative;
+					display: block;
+					z-index: 510;
+					@include transition;
+				}
+				& > .megaMenu {
+					display: none;
+				}
+				@media only screen and (min-width: $small-breakpoint) {
+					float: left;
+					& > .megaMenu {
+					    opacity: 0;
+					    visibility: hidden;
+					    overflow: hidden;
+					}
+					&.active > .megaMenu {
+						opacity: 1;
+					    visibility: visible;
+					    overflow: visible;
+					}
+				}
+			}
+			@media only screen and (min-width: $small-breakpoint) {
+				display: inline-block;
+			}
+		}
+		
+		.mainNav {
+			margin: 0;
+		}
+		
+		.navBlock {
+		}
+		
+		.subNav_header {
+			padding: .5em .75em;
+			border: {
+				top: 1px solid;
+				bottom: 1px solid;
+			}
+			&:hover {
+				background: darken($altColor_alpha, 10%)
+			}
+			.navBlock.active & {
+				font-weight: bold;
+				background: darken($altColor_alpha, 20%);
+			}
+		}
+		
+		.megaMenu {
+			margin-left: 0;
+			width: 100%;
+			display: block;
+			@include transition;
+			@media only screen and (min-width: $small-breakpoint) {
+				position: absolute;
+				margin-top: 1em;
+				left: 0;
+				background: rgba(255, 255, 255, 0.75);
+				padding: 1.5em 10%;
+			}
+			.navBlock.active & {
+				display: block;
+			}
+		}
+		
+		.megaMenu-column {	
+			@extend .column;
+			@extend .medium-3;
+			& > a {
+				display: block;
+				border: {
+					bottom: 1px solid;
+				}
+				padding: .5em .75em;
+				@media only screen and (min-width: $small-breakpoint) {
+					border: {
+						bottom: 0;
+					}
+				}
+			}	
+		}
 	
 	/* --- PRODUCT PAGE --- */
 	
@@ -88,3 +212,44 @@
 		@extend .column;
 		@extend .small-2;
 	}
+	
+	
+	/* --- FOOTER --- */
+	
+		/* -- NEWSLETTER -- */
+		
+		#formNewsletter {
+			border: {
+				bottom: 1px solid darken($altColor_alpha, 15%);
+			}
+			margin-bottom: 1em;
+			@media only screen and (min-width: $small-breakpoint) {
+				margin-bottom: 0;
+				border: none;
+			}
+			label {
+				font-style: italic;
+			}
+			input {
+				margin: 0;
+				height: 2rem;
+			}
+			#subForm {
+				p {
+					margin-bottom: .5rem;
+				}
+			}
+		}
+		
+		.formFields {
+			margin-bottom: 1rem;
+		}
+		
+		.copyright {
+			font-size: .75em;
+			line-height: normal;
+			font-style: italic;
+			color: lighten($altColor_beta, 20%);
+		}
+		
+		
