@@ -11,12 +11,68 @@
 		line-height: normal;
 		font-size: 3.75em;
 		text-align: center;
-		white-space: nowrap;
+		&:hover, &:focus {
+			color: $colorBase_A;
+		}
+		@include transition;
 		@media only screen and (min-width: $small-breakpoint) {
 			text-align: left;
-			font-size: 2.25em;	
+			font-size: 2.25em;
+			white-space: nowrap;	
 		}
 		@media only screen and (min-width: $medium-breakpoint) {
 			font-size: 4em;
 		}
+		.js & {
+			font-size: 4.5rem;
+			@media only screen and (min-width: $small-breakpoint) {
+				
+			}
+		}
 	}
+	
+	.headerHammer {
+		font-size: inherit;
+		.js & {
+			font-size: 1.125em;
+			@media only screen and (min-width: $small-breakpoint) {
+				font-size: inherit;
+			}
+		}
+	}
+	
+	/* -- LIBRARY -- */
+		
+		.colorBlock {
+			padding: 2em 1.25em;
+			display: block;
+			text-align: center;
+			margin-bottom: 1em;
+			color: $colorSpecial_C;
+			text-transform: uppercase;
+			#colorA & {
+				background: $colorBase_A;
+				color: $colorSpecial_B;
+			}
+			#colorB & {
+				background: $colorBase_B;
+			}
+			#colorC & {
+				background: $colorAlt_A;
+			}
+			#colorD & {
+				background: $colorAlt_B;
+			}
+			#colorE & {
+				background: $colorAlt_C;
+			}
+			#colorF & {
+				background: $colorBase_Z;
+			}
+			#colorG & {
+				background: $colorSpecial_B;
+			}
+			#colorH & {
+				background: $colorSpecial_A;
+			}
+		}

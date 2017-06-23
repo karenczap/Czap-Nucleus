@@ -38,7 +38,7 @@
 				font-size: 1.5em;
 				padding: .5em;
 				width: auto;
-				background: darken($altColor_alpha, 20%);
+				/*background: darken($colorBase_B, 20%);*/
 			}
 			@media only screen and (min-width: $small-breakpoint) {
 				display: inline-block;
@@ -74,6 +74,15 @@
 		}
 		
 		.title-bar {
+			/*background: $colorBase_Z;*/
+			text-transform: uppercase;
+			padding: {
+				left: 3rem;
+				right: 3rem;
+			}
+			.menu-icon {
+				margin-left: 0;
+			}
 			@media only screen and (min-width: $small-breakpoint) {
 				display: none;
 			}
@@ -84,6 +93,8 @@
 			cursor: default;
 			z-index: 500;
 			@include transition;
+			/*background: lighten($colorBase_Z,5%);*/
+			text-transform: uppercase;
 			& > li {
 				display: block;
 				& > a {
@@ -111,6 +122,7 @@
 			}
 			@media only screen and (min-width: $small-breakpoint) {
 				display: inline-block;
+				background: none;
 			}
 		}
 		
@@ -119,20 +131,35 @@
 		}
 		
 		.navBlock {
+			letter-spacing: 2pt;
 		}
 		
 		.subNav_header {
-			padding: .5em .75em;
+			padding: {
+				top: .75em;
+				bottom: .75em;
+				left: 2.575rem;
+				right: 1rem;
+			}
 			border: {
-				top: 1px solid;
-				bottom: 1px solid;
+				bottom: 1px solid $colorSpecial_B;
 			}
 			&:hover {
-				background: darken($altColor_alpha, 10%)
+				/*background: $colorAlt_C;
+				color: $colorSpecial_C;*/
 			}
 			.navBlock.active & {
 				font-weight: bold;
-				background: darken($altColor_alpha, 20%);
+				/*background: darken($colorAlt_C,15%);*/
+				border: {
+					bottom: 1px solid $colorBase_Z;
+				}
+				&:hover, &:focus {
+					/*background: darken($colorAlt_C,18%);*/
+				}
+			}
+			@media only screen and (min-width: $small-breakpoint) {
+				border-bottom: none;
 			}
 		}
 		
@@ -159,9 +186,19 @@
 			& > a {
 				display: block;
 				border: {
-					bottom: 1px solid;
+					bottom: 1px solid $colorAlt_C;
 				}
-				padding: .5em .75em;
+				padding: {
+					top: .5em;
+					bottom: .5em;
+					left: 2.575rem;
+					right: 1rem;
+				}
+				font-size: .875em;
+				/*background: darken($colorAlt_C,10%);
+				&:hover, &:focus {
+					background: darken($colorAlt_C,6%);
+				}*/
 				@media only screen and (min-width: $small-breakpoint) {
 					border: {
 						bottom: 0;
@@ -169,49 +206,65 @@
 				}
 			}	
 		}
-	
-	/* --- PRODUCT PAGE --- */
-	
-	.splashFeature {
-		&.column {
-			@media only screen and (min-width: $small-breakpoint) {
-				padding-right: 5%;
+		
+		/* --- BODY --- */
+		
+			.contentModule {
+				max-width: $medium-breakpoint;
 			}
-		}
-	}
-	
-	.splashStage {
-		margin: 0 auto;
-		display: block;
-		@media only screen and (min-width: $medium-breakpoint) {
-			padding: 0 10%;
-		}
-		@media only screen and (min-width: $large-breakpoint) {
-			padding: 0 20%;
-		}
-	}
-	
-	.orbit-container {
-		&.productStage {
-			/*min-height: 65em;*/
-		}
-	}
-	
-	.thumbColumn {
-		@extend .column;
-		@extend .medium-3;
-	}
-	
-	/* --- GALLERY PAGE --- */
-	
-	.galleryLinks {
-		@extend .blockList;
-	}
-	
-	.galleryItem {
-		@extend .column;
-		@extend .small-2;
-	}
+		
+			/* --- BREADCRUMBS --- */
+			
+			.breadcrumbs {
+				display: none;
+				@media only screen and (min-width: $small-breakpoint) {
+					display: block;
+				}
+			}
+			
+			
+			/* --- PRODUCT PAGE --- */
+			
+			.splashFeature {
+				&.column {
+					@media only screen and (min-width: $small-breakpoint) {
+						padding-right: 5%;
+					}
+				}
+			}
+			
+			.splashStage {
+				margin: 0 auto;
+				display: block;
+				@media only screen and (min-width: $medium-breakpoint) {
+					padding: 0 10%;
+				}
+				@media only screen and (min-width: $large-breakpoint) {
+					padding: 0 20%;
+				}
+			}
+			
+			.orbit-container {
+				&.productStage {
+					/*min-height: 65em;*/
+				}
+			}
+			
+			.thumbColumn {
+				@extend .column;
+				@extend .medium-3;
+			}
+			
+			/* --- GALLERY PAGE --- */
+			
+			.galleryLinks {
+				@extend .blockList;
+			}
+			
+			.galleryItem {
+				@extend .column;
+				@extend .small-2;
+			}
 	
 	
 	/* --- FOOTER --- */
@@ -220,7 +273,7 @@
 		
 		#formNewsletter {
 			border: {
-				bottom: 1px solid darken($altColor_alpha, 15%);
+				bottom: 1px solid darken($colorBase_B, 15%);
 			}
 			margin-bottom: 1em;
 			@media only screen and (min-width: $small-breakpoint) {
@@ -249,7 +302,7 @@
 			font-size: .75em;
 			line-height: normal;
 			font-style: italic;
-			color: lighten($altColor_beta, 20%);
+			color: lighten($colorBase_Z, 20%);
 		}
 		
 		

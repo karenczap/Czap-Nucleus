@@ -11,3 +11,44 @@
 		list-style: none;
 	}
 	
+	body {
+		/*background: $colorBase_A;
+		color: $colorBase_Z;*/
+	}
+	
+	/* TYPOGRAPHY */
+	body {
+		font-family: $typeAlt;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		/*font-family: $typeHeader;*/
+	}
+	
+	h2, h3, h5 {
+		font-weight: 700;
+	}
+	
+	a, .breadcrumbs a {
+		/*color: $colorAlt_A;*/
+		font-weight: bold;
+		@include transition;
+		text-decoration: none;
+		&:hover, &:focus {
+			/*color: $colorSpecial_A;*/
+			text-decoration: none;
+		}
+	}
+	
+	strong, em {
+		/*color: $colorSpecial_B;*/
+	}
+	
+	.special {
+		font-family: $typeSpecial;
+	}
+	
+	.alt {
+		font-family: $typeBody;
+	}
+	

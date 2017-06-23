@@ -9,8 +9,23 @@
 		$xlarge-breakpoint: 120em;
 		
 		/* -- COLORS -- */
-		$altColor_alpha: #cfe8f7;
-		$altColor_beta: #000000;
+		$colorBase_A: rgba(238,216,239,1); /* #eed8ef */
+		$colorBase_B: rgba(255,153,89,1); /* #ff9959 */
+		$colorBase_Z: rgba(30,0,51,1); /* #1e0033 */
+		
+		$colorAlt_A: rgba(254,98,92,1); /* #f5625c */
+		$colorAlt_B: rgba(239,72,122,1); /* #ef487a */
+		$colorAlt_C: rgba(172,32,125,1); /* #ac207d */
+		
+		$colorSpecial_A: rgba(95,95,255,1); /* #5f5fff */
+		$colorSpecial_B: rgba(0,0,0,1); /* #000000 */
+		$colorSpecial_C: rgba(255,255,255,1); /* #FFFFFF */
+		
+		/* -- TYPE -- */
+		$typeBody: "leitura-news",serif;
+		$typeHeader: "aller-display","Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+		$typeSpecial: "vortice-concept","Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+		$typeAlt: /*"aller",*/"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 		
 		
 		
@@ -28,5 +43,18 @@
 			padding: {
 				left: 0 !important;
 				right: 0 !important;
+			}
+		}
+		
+		@mixin padded {
+			padding: {
+				left: 3rem;
+				right: 3rem;
+			}
+			@media only screen and (min-width: $large-breakpoint) {
+				padding: {
+					left: 2rem;
+					right: 2rem;
+				}
 			}
 		}

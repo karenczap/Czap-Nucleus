@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+		<title>Czap Nucleus - Pattern Library</title>
+		<!-- STYLESHEETS -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="styles/global.css??v=3.4.076">
+		<!-- JAVASCRIPT -->
+		<script>
+		  (function(d) {
+		    var config = {
+		      kitId: 'bzw8nby',
+		      scriptTimeout: 3000,
+		      async: true
+		    },
+		    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+		  })(document);
+		</script> <!-- TYPEKIT -->
+		<script src="js/modernizr.custom.52378.js"></script>
+	</head>
+	<body>
+		<section class="row l_group expanded">
+			<div class="column">
+				<h1 class="special">Kevin Czap</h1>
+				<h2>Pattern Library</h2>
+				<h3>Global Styles</h3>
+				<h4>Typography</h4>
+				<p>Some sample text to introduce this pattern library, laying out the various styles to be used throughout this site. <strong>Here's a strong tag</strong> and here's <em>an emphasis tag</em> for example.</p>
+				<p>This is being written while listening to <a href="">David Bowie</a>.</p>
+				<section class="l_group">
+					<div class="column medium-4">
+						<h5>Aller</h5>
+						<p>The main body text is set in <strong><em>Aller</em></strong>, a solid sans-serif, with fallbacks defined by Foundation's defaults. Used for short blocks of text (like intro paragraphs).</p>
+						<p>1234567890</p>
+					</div>
+					<div class="column medium-4">
+						<h5 class="special">Vortice</h5>
+						<p class="special">The special, headline text is set in <strong>Vortice Concept</strong>. Wide, slightly cartoony, all-caps.</p>
+						<p class="special">1234567890</p>
+					</div>
+					<div class="column medium-4">
+						<h5 class="alt">Leitura News</h5>
+						<p class="alt">For long text blocks, fine-print, captions, and other special cases, here's a serif, <strong><em>Leitura News</em></strong>. Pretty legible at small sizes</p>
+						<p class="alt">1234567890</p>
+					</div>
+				</section>
+				<h4>Color</h4>
+				<section class="l_group collapse">
+					<div id="colorA" class="column medium-3">
+						<h5 class="colorBlock">#eed8ef</h5>
+					</div>
+					<div id="colorB" class="column medium-3">
+						<h5 class="colorBlock">#ff9959</h5>
+					</div>
+					<div id="colorC" class="column medium-3">
+						<h5 class="colorBlock">#f5625c</h5>
+					</div>
+					<div id="colorD" class="column medium-3">
+						<h5 class="colorBlock">#ef487a</h5>
+					</div>
+					<div id="colorE" class="column medium-3">
+						<h5 class="colorBlock">#ac207d</h5>
+					</div>
+					<div id="colorF" class="column medium-3">
+						<h5 class="colorBlock">#1e0033</h5>
+					</div>
+					<div id="colorG" class="column medium-3">
+						<h5 class="colorBlock">#000000</h5>
+					</div>
+					<div id="colorH" class="column medium-3">
+						<h5 class="colorBlock">#5f5fff</h5>
+					</div>
+			</div>
+		</section>
+		
+		
+		<!-- JAVASCRIPT -->
+		<script src="js/jquery-3.1.1.min.js"></script> <!-- JQUERY -->
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+			$( function() {
+				$( ".menu-icon" ).on( "click", function() {
+					$( ".megaMenu-block" ).toggleClass( "active" );
+			    });
+			} );
+			  
+			$("a.toggleButton").each(function () {
+		        $(this).click(function (){
+			        var myUL = $(this).parent().toggleClass("active");
+			        $(".dropToggle").not(myUL).removeClass("active");
+			    });
+		    });
+		</script>
+		<!-- FOUNDATION -->
+		<script src="js/foundation.js"></script>
+		<script src="js/docs.js"></script>
+	</body>
+</html>
